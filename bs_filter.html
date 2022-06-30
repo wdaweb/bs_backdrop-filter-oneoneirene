@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.css'>
+  <style>
+
+    body,
+    html {
+      width: 100%;
+      height: 100vh;
+      background-image:url("https://images.unsplash.com/photo-1655720408861-8b04c0724fd9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .row>div {
+      min-height: 200px;
+      min-width: 200px;
+      color: white;
+      text-shadow: 0 0 1rem black;
+      font-size: 20px;
+    }
+
+    .none { backdrop-filter: none; }
+    .grayscale { backdrop-filter: grayscale(1); }
+    .brightness { backdrop-filter: brightness(1.5); }
+    .blur { backdrop-filter: blur(5px);} 
+    .contrast  { backdrop-filter: contrast(0.8); }
+    .invert { backdrop-filter: invert(0.7); }
+    .opacity { backdrop-filter: opacity(0.4); }
+    .sepia { backdrop-filter: sepia(0.4); }
+    .saturate { backdrop-filter: saturate(1.8); }
+    .hue-rotate { backdrop-filter: hue-rotate(120deg); }
+
+  </style>
+</head>
+<body>
+
+  <div class="container-fluid d-flex flex-md-row h-100 overflow-auto align-content-center align-items-md-center">
+    <div class="row m-3 border border-1 border-dark rounded-3 flex-md-nowrap text-center align-items-md-center">
+      <div class="col-md d-flex justify-content-center align-items-center border border-1 border-dark ">backdrop-filter效果</div>
+      <div class="col-md d-flex justify-content-center align-items-center border border-1 border-dark none">backdrop-filter: none</div>
+      <div class="col-md d-flex justify-content-center align-items-center border border-1 border-dark grayscale">backdrop-filter: grayscale(1)</div>
+      <div class="col-md d-flex justify-content-center align-items-center border border-1 border-dark brightness">backdrop-filter: brightness(1.5)</div>
+      <div class="col-md d-flex justify-content-center align-items-center border border-1 border-dark blur">backdrop-filter: blur(5px)</div>
+      <div class="col-md d-flex justify-content-center align-items-center border border-1 border-dark contrast">backdrop-filter: contrast(0.8)</div>
+      <div class="col-md d-flex justify-content-center align-items-center border border-1 border-dark invert">backdrop-filter: invert(0.7)</div>
+      <div class="col-md d-flex justify-content-center align-items-center border border-1 border-dark opacity">backdrop-filter: opacity(0.4)</div>
+      <div class="col-md d-flex justify-content-center align-items-center border border-1 border-dark sepia">backdrop-filter: sepia(0.4)</div>
+      <div class="col-md d-flex justify-content-center align-items-center border border-1 border-dark saturate">backdrop-filter: saturate(1.8)</div>
+      <div class="col-md d-flex justify-content-center align-items-center border border-1 border-dark hue-rotate">backdrop-filter: hue-rotate(120deg)</div>
+    </div>
+  </div>
+
+  
+<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.js' ></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.js' ></script>
+  
+</body>
+</html>
